@@ -115,6 +115,7 @@ resource "aws_eip" "shiva_eip" {
 resource "aws_nat_gateway" "shiva_nat_gateway" {
     subnet_id     = aws_subnet.shiva_subnet_public.id
     allocation_id = aws_eip.shiva_eip.allocation_id
+    availability_mode = "regional"
     tags = {
         Name = "shiva_nat_gateway"
     }
