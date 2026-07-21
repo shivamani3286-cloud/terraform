@@ -119,7 +119,7 @@ resource "aws_instance" "shiva_instance" {
         Name = "shiva-instance-public"
     }
 }
-resource "aws_instance" "shiva_instance" {
+resource "aws_instance" "shiva_instanc" {
     ami = "ami-01edba92f9036f76e"
     instance_type = "t3.micro"
     subnet_id = aws_subnet.shiva_subnet_private.id
@@ -166,11 +166,10 @@ resource "aws_db_instance" "shiva-db" {
   instance_class       = "db.t3.micro"
   db_name                 = "shivadb_22"
   username             = "admin"
-  password             = "Shiva@1234"
+  password             = "Shiva1234"
   parameter_group_name = "default.mysql8.0"
   skip_final_snapshot  = true
   vpc_security_group_ids = [aws_security_group.shiva_db_security_group.id]
-  db_subnet_group_name   = aws_db_subnet_group.shiva_db_subnet_group.name
 
   tags = {
     Name = "shiva-db-instance"
