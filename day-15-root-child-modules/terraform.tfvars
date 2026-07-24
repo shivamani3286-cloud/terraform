@@ -1,0 +1,6 @@
+vpc_name = "my-vp"
+vpc_cidr = "10.0.0.0/16"
+subnet_cidr = "10.0.1.0/24"
+subnet_az = "us-east-1a"
+ami_id = "ami-0c94855ba95c71c99"
+instance_type = "t3.micro"
