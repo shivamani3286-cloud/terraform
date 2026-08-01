@@ -6,7 +6,7 @@ key_name    = "shiva"
 domain_name = "tahirofficial.site"
 
 # TODO: restrict this to your own IP before applying, e.g. "103.xx.xx.xx/32"
-admin_ssh_cidr = "49.238.35.167"
+admin_ssh_cidr = "0.0.0.0/0"
 
 # TODO: set a real password - do NOT commit this file with a real password to git.
 # Better: leave this line out and run `terraform apply -var="db_password=YourRealPassword"`
